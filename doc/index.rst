@@ -15,3 +15,6 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
+   content/installation.md
+   content/page2.md
+   content/page3.md
