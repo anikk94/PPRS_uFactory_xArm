@@ -1,0 +1,6 @@
+.venv
+
+doc-example
+_build
+
+working_notes.md
