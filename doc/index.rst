@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-PPRS UFactory xArm6 Documentation
+PPRS uFactory xArm6 Documentation
 ======================================
 
 Add your content using ``reStructuredText`` syntax. See the

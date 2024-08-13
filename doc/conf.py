@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'PPRS UFactory xArm6'
+project = 'PPRS uFactory xArm6 Docs'
 copyright = '2024, Anirudh Krishnan Komaralingam'
 author = 'Anirudh Krishnan Komaralingam'
 release = '0.1'
