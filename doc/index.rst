@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-PPRS uFactory xArm6 Documentation
+PPRS UFactory xArm6 Documentation
 ======================================
 
 Add your content using ``reStructuredText`` syntax. See the
@@ -16,5 +16,8 @@ documentation for details.
    :caption: Contents:
 
    content/installation.md
+   content/arm.md
+   content/gripper.md
+   content/misc.md
    content/page2.md
    content/page3.md
