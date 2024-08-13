@@ -16,5 +16,8 @@ documentation for details.
    :caption: Contents:
 
    content/installation.md
+   content/arm.md
+   content/gripper.md
+   content/misc.md
    content/page2.md
    content/page3.md
