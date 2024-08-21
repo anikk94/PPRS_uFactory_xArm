@@ -27,6 +27,9 @@ release robot estop, unlock robot in ufactory studio
 
 jog robot
 
+## Additions
+1. realsense camera mount for ufactory
+
 
 ## References
 1. [ufactory youtube](https://www.youtube.com/@ufactory8326)
