@@ -11,6 +11,11 @@ PPRS UFactory xArm6 Documentation
    documentation for details.
 
 
+Introduction
+============
+
+PPRS Lab UFactory xArm6 Documentation
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -19,5 +24,5 @@ PPRS UFactory xArm6 Documentation
    content/arm.md
    content/gripper.md
    content/misc.md
-   content/page2.md
-   content/page3.md
+   content/ufactory-studio.md
+   content/programming.md
