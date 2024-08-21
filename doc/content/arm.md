@@ -1,8 +1,41 @@
 # Arm
 ## Robot Specifications
+
+### Working Range
+working space of xarm robots
+
+```{image} /resources/images/working_range_1.png
+:alt: camera_mount
+:width: 480px
+:align: center
+```
+
+```{image} /resources/images/working_range_2.png
+:alt: camera_mount
+:width: 480px
+:align: center
+```
+
+### Dimensions
+robot tool head
+
+```{image} /resources/images/dimensions_1.jpg
+:alt: camera_mount
+:width: 480px
+:align: center
+```
+
+robot base (mounting) plate
+
+```{image} /resources/images/dimensions_2.jpg
+:alt: camera_mount
+:width: 480px
+:align: center
+```
+
 ### General Specificatinos
-|Key |Value |
-|----|------|
+| Key                       | Value                                |
+|---------------------------|--------------------------------------|
 |robot model                | UFactory xArm6                       |
 |payload                    | 5kg                                  |
 |dof                        | 6                                    |
@@ -71,6 +104,7 @@ Warranty
 
 1-year warranty against manufacturer defects
 Stress tested to last a minimum of 3 years of full-time use
+
 ## Parts in box
 
 
