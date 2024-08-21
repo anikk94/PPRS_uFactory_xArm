@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; PPRS UFactory xArm6 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Arm" href="arm.html" />
+    <link rel="prev" title="PPRS UFactory xArm6 Documentation" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PPRS UFactory xArm6
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-setup">Hardware Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-plate">Base Plate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#robot-arm">Robot Arm</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#electrical-connections">Electrical Connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#network-connection">Network Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#power">Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gripper">Gripper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#software-setup">Software Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#network-configuration">Network Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#robot-control-interface-user-interface">Robot Control Interface User Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#additions">Additions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#realsense-camera-mount-for-ufactory-xarm">RealSense Camera Mount for UFactory xArm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arm.html">Arm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gripper.html">Gripper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Misc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ufactory-studio.html">UFactory Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Robot Programming</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PPRS UFactory xArm6</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/content/installation.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
+<section id="hardware-setup">
+<h2>Hardware Setup<a class="headerlink" href="#hardware-setup" title="Link to this heading"></a></h2>
+<p>Steps followed to install the robot hardware</p>
+<section id="base-plate">
+<h3>Base Plate<a class="headerlink" href="#base-plate" title="Link to this heading"></a></h3>
+<p>Fix Base Plate to a table. An optical table with 1 inch hole grid is used. Base Plate required modification by drilling into one of the slots to make the base plate fastening points align with the holes on the optical table.</p>
+<section id="robot-arm">
+<h4>Robot Arm<a class="headerlink" href="#robot-arm" title="Link to this heading"></a></h4>
+<p>Robot base is mounted to the base plate with provided bolts.</p>
+</section>
+</section>
+<section id="electrical-connections">
+<h3>Electrical Connections<a class="headerlink" href="#electrical-connections" title="Link to this heading"></a></h3>
+<p>There are 2 wired connections made from the robot base. Connectors are part of the included hardware. Connectors are for robot power and robot signal which go connect the robot arm to the robot controller. Connectors need to be plugged in, then tightened.</p>
+<p>The connecting wires from the robot arm connect to the robot controller. the connection mechanism is identical to the connections on the robot base. The port on the controller labeled <code class="docutils literal notranslate"><span class="pre">Enabling</span> <span class="pre">switch</span></code> will be left disconnected at the end of successful connection of cables.</p>
+</section>
+<section id="network-connection">
+<h3>Network Connection<a class="headerlink" href="#network-connection" title="Link to this heading"></a></h3>
+<p>A Ethernet connection is made from the robot controller to a computer. The computer will act as the control interface for the robot operator.</p>
+</section>
+<section id="power">
+<h3>Power<a class="headerlink" href="#power" title="Link to this heading"></a></h3>
+<p>Once connections are checked, the controller is connected to mains power and the switch on the controller box is turened on. It takes 30 seconds to initialize and establish network connection with a computer.</p>
+</section>
+<section id="gripper">
+<h3>Gripper<a class="headerlink" href="#gripper" title="Link to this heading"></a></h3>
+<p>Install the gripper later. Look at the Gripper section for more information.</p>
+</section>
+</section>
+<section id="software-setup">
+<h2>Software Setup<a class="headerlink" href="#software-setup" title="Link to this heading"></a></h2>
+<section id="network-configuration">
+<h3>Network Configuration<a class="headerlink" href="#network-configuration" title="Link to this heading"></a></h3>
+<p>The computer used to access the robot’s controller interface and the robot should be on the same local network. Configure the ethernet network interface of the computer to have the same network address as the robot. Initially the network address (192.168.1.xxx) should match the robot controller’s default addres. The robot’s network settings can be modified later. The robot controller’s default (out of the box) ip address is enscribed on the controller box.</p>
+<p>If the computer’s ethernet adapter address is 10.0.0.10 and the robot controller’s address is 192.168.1.yyy the address of the ethernet adapter has to be changed to 192.168.1.xxx (where xxx != yyy). If this is the same network interface that is used for internet access, make contingency plans such as using wifi.</p>
+</section>
+<section id="robot-control-interface-user-interface">
+<h3>Robot Control Interface User Interface<a class="headerlink" href="#robot-control-interface-user-interface" title="Link to this heading"></a></h3>
+<p>The robot does come with a teach pendant. Operators control the robot using a graphical interface that is available through a browser page or a desktop application.</p>
+<ul class="simple">
+<li><p>Browser Web Page: Connect to the robot interface in the browser by going to the robot’s IP address once the computer’s network interface is configured properly. Once the robot and computer are on the same network, this will work</p></li>
+<li><p>Desktop Application: The desktop application, UFactory Studio can be downloaded from the <a class="reference external" href="https://www.ufactory.cc/ufactory-studio/">UFactory company website</a>. UFactory Studio works similarly to the browser web interface and has the same network requirements. The computer with UFactory Studio and the robot must be on the same local network to make a successful connnection and activate the user interface.</p></li>
+</ul>
+<p>Open one of the controller interface options and set computer’s ip to same network as robot and assign a host address that is not the same as the robot’s - 192.168.1.221(robot), 192.168.1.220(pc). Connect to robot. Release robot estop, unlock robot in graphical interface and change the world (start by jogging the robot).</p>
+</section>
+</section>
+<section id="additions">
+<h2>Additions<a class="headerlink" href="#additions" title="Link to this heading"></a></h2>
+<section id="realsense-camera-mount-for-ufactory-xarm">
+<h3>RealSense Camera Mount for UFactory xArm<a class="headerlink" href="#realsense-camera-mount-for-ufactory-xarm" title="Link to this heading"></a></h3>
+<p>A realsense camera (D415/D435) mount for the xArm was created based on a similar part available on <a class="reference external" href="https://www.robotshop.com/products/xarm-camera-stand?srsltid=AfmBOoqbglu1ij_PWWBNCHvKEo5VmnMxVN280AaUBCG3Z4snA3wFItxk">roboshop.com</a>. A second spacer model was added for a better fit necessitated by the choice of screws used in the installation.</p>
+<p>The camera mount is installed between the robot wrist-3 link and end-effector. It can be installed without the gripper but would need alternate mounting screws</p>
+<a class="reference internal image-reference" href="../_images/ufactory_realsense_camera_mount_v2.PNG"><img alt="camera_mount" class="align-center" src="../_images/ufactory_realsense_camera_mount_v2.PNG" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/spacer.PNG"><img alt="camera_mount" class="align-center" src="../_images/spacer.PNG" style="width: 200px;" /></a>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.youtube.com/&#64;ufactory8326">ufactory youtube</a></p></li>
+<li><p><a class="reference external" href="https://www.ufactory.cc/wp-content/uploads/2023/05/xArm-User-Manual-V2.0.0.pdf">ufactory manual</a></p></li>
+<li><p><a class="reference external" href="https://www.ufactory.cc/ufactory-studio/">ufactory studio</a></p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="PPRS UFactory xArm6 Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arm.html" class="btn btn-neutral float-right" title="Arm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Anirudh Krishnan Komaralingam.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gripper &mdash; PPRS UFactory xArm6 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Misc" href="misc.html" />
+    <link rel="prev" title="Arm" href="arm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PPRS UFactory xArm6
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arm.html">Arm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gripper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#parts-in-box">Parts in box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modbus">Modbus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modbus-rs485">Modbus RS485</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modbus-rtu">ModBus RTU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rs485">rs485</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rs485-to-usb">rs485 to usb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#programming-considerations">programming considerations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Misc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ufactory-studio.html">UFactory Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Robot Programming</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PPRS UFactory xArm6</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Gripper</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/content/gripper.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gripper">
+<h1>Gripper<a class="headerlink" href="#gripper" title="Link to this heading"></a></h1>
+<p>gripper connector/ gripper coupling</p>
+<p>gripper communication protocol</p>
+<p>gripper options for xArm</p>
+<p>gripper options that we have</p>
+<section id="parts-in-box">
+<h2>Parts in box<a class="headerlink" href="#parts-in-box" title="Link to this heading"></a></h2>
+</section>
+<section id="modbus">
+<h2>Modbus<a class="headerlink" href="#modbus" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>Modbus is an industrial protocol that was developed in 1979 to make communication possible between automation devices. Originally implemented as an application-level protocol intended to transfer data over a serial layer, Modbus has expanded to include implementations over serial, TCP/IP, and the user datagram protocol (UDP)</p>
+</div></blockquote>
+<blockquote>
+<div><p>Modbus is a request-response protocol implemented using a master-slave relationship. In a master-slave relationship, communication always occurs in pairs—one device must initiate a request and then wait for a response—and the initiating device (the master) is responsible for initiating every interaction. Typically, the master is a human machine interface (HMI) or Supervisory Control and Data Acquisition (SCADA) system and the slave is a sensor, programmable logic controller (PLC), or programmable automation controller (PAC). The content of these requests and responses, and the network layers across which these messages are sent, are defined by the different layers of the protocol.</p>
+</div></blockquote>
+<p><a class="reference external" href="https://www.ni.com/en/shop/seamlessly-connect-to-third-party-devices-and-supervisory-system/the-modbus-protocol-in-depth.html">Modbus Protocol Information</a></p>
+</section>
+<section id="modbus-rs485">
+<h2>Modbus RS485<a class="headerlink" href="#modbus-rs485" title="Link to this heading"></a></h2>
+<p>In order for the data exchange to happen, the host requires a medium that not only facilitates the exchange but also determines the pace.</p>
+<p>Enter RS485.</p>
+<p>It is basically an electrical or serial transmission standard that defines the physical level of electrical signals between the host and the slaves and also the wiring that enables the transfer of data. It is a popular standard used in data exchange as it allows the usage of several devices using the same standard on the same bus, which eliminates the need to multiply interfaces on the host while querying multiple devices.</p>
+<p>Hence, when we say Modbus RS485, it denotes the protocol being used in process automation along with its ability to communicate effectively by the name of serial transmission standard.</p>
+</section>
+<section id="modbus-rtu">
+<h2>ModBus RTU<a class="headerlink" href="#modbus-rtu" title="Link to this heading"></a></h2>
+<p>The RTU version uses a client/server technique to communicate between devices. Meaning, any application that utilizes the RTU protocol will have a client and at least one server. A client is typically a host supervisory computer running software that will communicate with one or more server devices.</p>
+<p>Modbus enables client/server communication between devices connected through buses or networks. On the OSI Model, Modbus is positioned at Level 7. It is intended to be a request/reply protocol and delivers services specified by function codes. The function codes of the protocol are elements of its request/reply Protocol Data Unit.</p>
+</section>
+<section id="rs485">
+<h2>rs485<a class="headerlink" href="#rs485" title="Link to this heading"></a></h2>
+</section>
+<section id="rs485-to-usb">
+<h2>rs485 to usb<a class="headerlink" href="#rs485-to-usb" title="Link to this heading"></a></h2>
+</section>
+<section id="programming-considerations">
+<h2>programming considerations<a class="headerlink" href="#programming-considerations" title="Link to this heading"></a></h2>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>https://wiki.ros.org/robotiq/Tutorials/Control%20of%20a%202-Finger%20Gripper%20using%20the%20Modbus%20RTU%20protocol%20%28ros%20kinetic%20and%20newer%20releases%29</p></li>
+<li><p>https://blog.robotiq.com/controlling-the-robotiq-2f-gripper-with-modbus-commands-in-python</p></li>
+<li><p>https://www.rtautomation.com/technologies/modbus-rtu/?srsltid=AfmBOopKtAbcT6BoNZfRAysM7znbaKk6KpyMX6PIy2KZvNf8QN1gJ_uZ</p></li>
+<li><p>https://www.equustek.com/modbus-rs485-everything-need-know/</p></li>
+<li><p>https://www.ni.com/en/shop/seamlessly-connect-to-third-party-devices-and-supervisory-system/the-modbus-protocol-in-depth.html#:~:text=Modbus%20is%20a%20request%2Dresponse,responsible%20for%20initiating%20every%20interaction.</p></li>
+<li><p>https://www.sciencedirect.com/topics/engineering/end-effector</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arm.html" class="btn btn-neutral float-left" title="Arm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="misc.html" class="btn btn-neutral float-right" title="Misc" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Anirudh Krishnan Komaralingam.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
