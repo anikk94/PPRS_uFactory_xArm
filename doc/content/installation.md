@@ -40,6 +40,9 @@ Open one of the controller interface options and set computer's ip to same netwo
 ## Additions
 1. realsense camera mount for ufactory
 
+## Additions
+1. realsense camera mount for ufactory
+
 
 ## References
 1. [ufactory youtube](https://www.youtube.com/@ufactory8326)
